@@ -1,0 +1,29 @@
+/*
+    Created on : 17. 10. 2020, 17:38:35
+    Author     : Petr Smejkal
+*/
+
+@mixin themable($theme-name, $container-table, $table, $container-form, $form) {
+    .#{$theme-name} {
+        .container-table {
+            background-color: $container-table;
+        }
+
+        .table, th, tr, td {
+            background-color: $table;
+            border: 1px solid black;
+        }
+
+        .container-form {
+            background-color: $container-form;
+        }
+
+        .form {
+            background-color: $form;
+        }
+    }
+}
+
+@include themable(theme-1, #0099cc, #00ffff, #6666ff, #6666ff);
+@include themable(theme-2, #ccff00, #00cc33, #00cccc, #00cccc);
+

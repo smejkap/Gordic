@@ -1,0 +1,25 @@
+/*
+    Created on : 17. 10. 2020, 17:38:35
+    Author     : Petr Smejkal
+*/
+.theme-1 .container-table {
+  background-color: #0099cc; }
+.theme-1 .table, .theme-1 th, .theme-1 tr, .theme-1 td {
+  background-color: #00ffff;
+  border: 1px solid black; }
+.theme-1 .container-form {
+  background-color: #6666ff; }
+.theme-1 .form {
+  background-color: #6666ff; }
+
+.theme-2 .container-table {
+  background-color: #ccff00; }
+.theme-2 .table, .theme-2 th, .theme-2 tr, .theme-2 td {
+  background-color: #00cc33;
+  border: 1px solid black; }
+.theme-2 .container-form {
+  background-color: #00cccc; }
+.theme-2 .form {
+  background-color: #00cccc; }
+
+/*# sourceMappingURL=styles.css.map */
