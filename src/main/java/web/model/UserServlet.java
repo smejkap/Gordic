@@ -26,9 +26,9 @@ public class UserServlet extends HttpServlet {
     }
 
     /**
-     * Function 
-     * @param request
-     * @param response
+     * Function doPost for handling users requests
+     * @param request HttpServletRequest request
+     * @param response HttpServletResponse response
      * @throws ServletException In case of failure throw ServletException
      * @throws IOException In case of failure throw IOException
      */
@@ -39,18 +39,16 @@ public class UserServlet extends HttpServlet {
     }
 
     /**
-     * 
-     * @param request
-     * @param response
+     * Function doGet for handling users requests
+     * @param request HttpServletRequest request
+     * @param response HttpServletResponse response
      * @throws ServletException In case of failure throw ServletException
      * @throws IOException In case of failure throw IOException
      */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
         String action = request.getServletPath();
-        System.out.println(action);
         try {
             switch (action) {
                 case "/insert":
