@@ -39,8 +39,10 @@ public class UserDAO {
             Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager.getConnection(jdbcURL, jdbcUsername, jdbcPassword);
         } catch (SQLException e) {
+            //TODO
             e.printStackTrace();
         } catch (ClassNotFoundException e) {
+            //TODO
             e.printStackTrace();
         }
         return connection;
